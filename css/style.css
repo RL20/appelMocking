@@ -1,0 +1,297 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+html,
+body {
+  font-family: "SF Pro Text", "Myriad Set Pro", "SF Pro Icons", "Apple Legacy Chevron", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  height: 100%;
+  width: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+a {
+  font-family: inherit;
+  color: inherit;
+}
+.box {
+  min-height: 580px;
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 14px;
+}
+.box a {
+  color: #2997ff;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav {
+  background-color: #333;
+  color: white;
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  min-width: 1024px;
+  height: 48px;
+}
+li {
+  padding: 5px;
+}
+nav li .btn {
+  background-repeat: no-repeat;
+  width: 15px;
+  display: block;
+  height: 30px;
+  padding: 8px 0;
+}
+
+nav li a.apple {
+  background-image: url(/assets/globalnav_apple_image__b5er5ngrzxqq_large.svg);
+}
+nav li a.search {
+  background-image: url(/assets/globalnav_search_image__cbllq1gkias2_large.svg);
+}
+nav li a.cart {
+  background-image: url(/assets/globalnav_bag_image__yzte50i47ciu_large.svg);
+}
+.line {
+  background-color: #e34140;
+  height: 47px;
+}
+.page1 {
+  flex-direction: column;
+  background-color: #fbedf9;
+  padding: 10px;
+}
+.page1 h1 {
+  font-size: 65px;
+}
+
+.page1 a {
+  padding: 10px 0;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+.img-container {
+  flex: 1 1 auto;
+}
+.img-container img {
+  width: 395px;
+}
+
+/* .redAppleGift {
+  display: flex;
+  justify-content: center;
+  height: 70px;
+  width: 70px;
+} */
+.page2 {
+  flex-direction: column;
+
+  /* flex: 1 1 auto; */
+  background-color: #fbfbfd;
+}
+.page2 h1 {
+  margin-top: 48px;
+  font-size: 65px;
+}
+.page2 h2 {
+  /* margin-top: 48px; */
+  font-size: 25px;
+}
+.page2 a {
+  padding: 10px 0;
+  font-size: 30px;
+  text-decoration: none;
+}
+.page2 .img-container img {
+  /* transform: translateY(-6px) scale(1.05); */
+  width: 1000px;
+  height: 100%;
+}
+
+.page3 {
+  height: 636px;
+  flex-direction: column;
+  background-color: #35283c;
+}
+.page3 h1 {
+  margin-top: 48px;
+  font-size: 65px;
+  color: white;
+  z-index: 5;
+}
+.page3 h2 {
+  color: #fec2eb;
+  font-size: 25px;
+  z-index: 5;
+}
+.page3 a {
+  padding: 10px 0;
+  font-size: 30px;
+  text-decoration: none;
+  z-index: 5;
+}
+.page3 .img-container {
+  height: 300px;
+}
+.page3 .img-container img {
+  transform: translateY(-92px);
+  /* object-fit: cover; */
+  width: 1000px;
+  /* height: 300px; */
+}
+.page3 .links {
+  z-index: 5;
+}
+.page4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 12px;
+  z-index: -2;
+}
+.tile {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  border: 1px solid black;
+  height: 627px;
+  padding-top: 37px;
+}
+.tile .linkes {
+  color: #2997ff;
+  font-size: 17px;
+  margin-top: 11.9px;
+}
+.tile h4 {
+  padding-top: 16px;
+  z-index: 1;
+  font-size: 40px;
+}
+.tile h5 {
+  z-index: 1;
+  font-size: 21px;
+}
+.linkes {
+  z-index: 1;
+}
+.tile1 {
+  background-color: #fbfbfd;
+}
+.tile1 .img-container img {
+  /* width: 500px; */
+  transform: scale(2.5);
+  z-index: -10;
+}
+
+.tile2 {
+  background-color: #f5f5f7;
+}
+.tile2 .img-container img {
+  /* width: 500px; */
+  transform: scale(2) translateY(-10px);
+  z-index: -10;
+}
+.tile2 h4 {
+  background-image: url(/images/tile_watch_logo_lte__h7snssb7mqq2_medium_2x.png);
+  height: 56px;
+  background-size: 146px 56px;
+  width: 146px;
+  background-repeat: no-repeat;
+}
+.tile3 {
+  background-color: #fbfbfd;
+}
+.tile3 .img-container img {
+  /* width: 500px; */
+  transform: scale(2) translateY(-10px);
+  z-index: -10;
+}
+.tile4 {
+  background-color: #fbfbfd;
+}
+.tile4 h4 {
+  background-image: url(/images/logo__dcojfwkzna2q_large.png);
+  height: 56px;
+  background-size: 146px 56px;
+  width: 146px;
+  background-repeat: no-repeat;
+}
+.tile4 .img-container img {
+  /* width: 500px; */
+  transform: scale(5) translateY(13px);
+  z-index: -10;
+}
+.tile5 {
+  background-color: #fbfbfd;
+}
+.tile5 h4 {
+  background-image: url(/images/logo__dcojfwkzna2q_medium_2x_1111111.png);
+  height: 56px;
+  background-size: 146px 56px;
+  width: 146px;
+  background-repeat: no-repeat;
+}
+.tile5 .img-container img {
+  /* width: 500px; */
+  transform: scale(2) translateY(-10px);
+  z-index: -10;
+}
+.tile6 {
+  background-image: url(/images/promo.jpg);
+  background-size: 1154px 663px;
+  background-position-x: center;
+  z-index: -1;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.tile6 h4 {
+  margin-top: 15px;
+  background-image: url(/images/tvApple.png);
+  height: 56px;
+  /* background-size: 126px 42px; */
+  width: 146px;
+  z-index: 1;
+  background-repeat: no-repeat;
+}
+.tile6 h5 {
+  background-image: url(/images/logo_dickinson_title__exfqr7iiyc8y_large.png);
+  height: 127px;
+  background-size: 257px 127px;
+  width: 257px;
+  background-repeat: no-repeat;
+}
+.tile6 div {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 37px;
+  text-align: center;
+  color: white;
+}
+.tile6 a {
+  text-decoration: none;
+  z-index: 1;
+}
+.tile6 a:hover {
+  text-decoration: underline;
+}
